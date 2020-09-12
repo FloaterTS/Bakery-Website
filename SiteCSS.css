@@ -1,0 +1,264 @@
+body, html{
+     height: 100%;
+}
+ *{
+     box-sizing:border-box;
+}
+ body{
+     background-color: pink;
+     background-image: url("https://st4.depositphotos.com/1094258/29614/v/600/depositphotos_296146034-stock-video-minimalist-pink-background-moving-cubes.jpg");
+     background-repeat: repeat;
+     background-size: 100%;
+     height: 100%;
+     font-family:Brush Script MT, monaco;
+     font-size:26px;
+     line-height:1.5;
+     margin:0;
+}
+ h1{
+     font-size:90px;
+}
+ h2{
+     font-size:36px;
+}
+ a{
+     font-size: 30px;
+     color:inherit;
+     text-decoration: none;
+}
+ td{
+     border: 2px dotted purple;
+     text-align:justify;
+}
+ article p{
+     color: #990000;
+}
+ li:nth-of-type(n){
+     background-image: linear-gradient(to right, pink , purple);
+}
+img.sticky {
+  position: sticky;
+  top: 10%;
+  display: inline-block;
+  margin-left: -10%;
+  width:8%; 
+  height: auto;
+}
+ @media (max-width: 600px) {
+     body {
+         background-image: url("https://static.vecteezy.com/system/resources/previews/000/094/603/original/vector-beautiful-pink-bokeh-hearts-background-illustration.jpg");
+    }
+}
+ #myNavbar{
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+}
+ #ifrMid{
+	 width: 85%;
+     height: 500px;
+     padding: 34px;
+	 margin: 0 auto;
+	 display: block;
+	 background-image: linear-gradient(to right, white , white);
+}
+ .vwh1{
+     font-size: 8vw;
+}
+ .vwh2{
+     font-size: 3vw;
+}
+ .homeBG{
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-image: url("https://s3.envato.com/files/257372444/bread_ovgla-6.jpg");
+     height: 100%;
+}
+ .bgColorTitle{
+     background-image: linear-gradient(to left, pink , purple);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 280px 90px;
+}
+ .hov:hover{
+     background-image: radial-gradient(pink ,purple);
+     font-weight: bold;
+}
+ .bgColorMenu{
+     display : none;
+     background-image: linear-gradient(to right, pink , purple);
+}
+ .stick{
+     position: sticky;
+     bottom: 0;
+}
+ .tag{
+     background-color:#000;
+     color:grey;
+     display:inline-block;
+     padding-left:8px;
+     padding-right:8px;
+     text-align:center;
+}
+ .row:after{
+     content:"";
+     display:table;
+     clear:both;
+}
+ .col.s{
+     width:33.33333%;
+     float:left;
+     transition: font-weight 1s;
+}
+ .content{
+     margin-left:auto;
+     margin-right:auto;
+     max-width:980px;
+}
+ .top{
+     position:fixed;
+     width:100%;
+     z-index:1;
+     background-color:rgba(0, 0, 0, 0.4);
+     visibility: visible;
+}
+ .display-bottomleft{
+     position:absolute;
+     left:0;
+     bottom:0;
+}
+ .display-middle{
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%);
+}
+ .center{
+     text-align:center;
+}
+ .border{
+     border:2px solid purple;
+}
+ .margin{
+     margin:16px;
+}
+ .margin-top{
+     margin-top:16px;
+}
+ .padding{
+     padding:8px 16px;
+}
+ .paddNav{
+     padding-left:12px;
+     padding-right:12px;
+}
+ .padding-large{
+     padding:12px 24px;
+}
+ .padding-48{
+     padding-top:48px;
+     padding-bottom:48px;
+}
+ .padding-64{
+     padding-top:64px;
+     padding-bottom:64px;
+}
+ .left{
+     float:left;
+}
+ .right{
+     float:right;
+}
+ .dropbtn {
+     background-color: pink;
+     color: black;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+	 margin: 0 auto;
+	 display: block;
+}
+ .dropdown {
+     position: relative;
+     margin: 0 auto;
+	 display: block;
+	 max-width: 160px;
+}
+ .dropdown-content {
+	 margin: 0 auto;
+     display: none;
+     background-color: pink;
+     max-width: 160px;
+     z-index: 1;
+}
+ .dropdown-content a {
+     color: black;
+     margin: 0 auto;
+	 display: block;
+}
+ .dropdown:hover .dropdown-content {
+     margin: 0 auto;
+	 display: block;
+}
+ .dropdown:hover .dropbtn {
+     background-color: purple;
+	 border:2px solid purple;
+}
+.relativ {
+	 position: relative;
+	 bottom: 0;
+	 margin: 3em;
+	 left: 40%;
+}
+.relativ2 {
+	 position: relative;
+	 margin: 5px;
+	 left: 48%;
+	 width: 50px;
+}
+ .pv {
+     left: 20%;
+     width: 100px;
+     height: 100px;
+     background-color: purple;
+     position: relative;
+     animation-name: animatee;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+     border-radius: 10%;
+}
+ @keyframes animatee {
+     0% {
+         background-color: purple;
+         border-radius: 10%;
+         left: 20%;
+         top: 0px;
+    }
+     25% {
+         background-color: pink;
+         border-radius: 40%;
+         left: 65%;
+         top: 0px;
+    }
+     50% {
+         background-color: white;
+         border-radius: 10%;
+         left: 65%;
+         top: 200px;
+    }
+     75% {
+         background-color: pink;
+         border-radius: 50%;
+         left: 20%;
+         top: 200px;
+    }
+     100% {
+         background-color: purple;
+         border-radius: 10%;
+         left: 20%;
+         top: 0px;
+    }
+}
+ 

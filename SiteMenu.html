@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flappy Pancake - Menu</title>
+    <meta charset="UTF-8">
+	<meta name="description" content="Flappy Pancake Bakery">
+    <link rel="stylesheet" href="SiteCSS.css">
+    <script src="SiteJS.js"></script>
+</head>
+
+<body>
+    <nav class="top">
+        <div id="myNavbar">
+            <a class="paddNav" href="SiteHome.html">&nbsp;&nbsp; HOME</a>
+            <a class="paddNav" href="SiteMenu.html">&nbsp;&nbsp; MENU</a>
+			<a class="paddNav" href="SiteProgram.html">&nbsp;&nbsp; PROGRAM</a>
+            <a class="paddNav" href="SiteAbout.html">&nbsp;&nbsp; ABOUT</a>
+            <a class="paddNav" href="SiteContact.html">&nbsp;&nbsp; CONTACT</a>
+        </div>
+    </nav>
+
+    <div class="padding-64" id="menu">
+        <div class="content">
+
+            <h2 class="center bgColorTitle" style="margin-bottom:64px">THE MENU</h2>
+			
+			<h2 class="center" id="happy"></h2>
+			
+            <div class="row center border">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pancakes');" id="myLink">
+                    <div class="col s tablink padding-large hov">Pancakes</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Cakes');">
+                    <div class="col s tablink padding-large hov">Cakes</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'IceCream');">
+                    <div class="col s tablink padding-large hov">Ice Cream</div>
+                </a>
+            </div>
+
+            <div id="Pancakes" class="menu bgColorMenu">
+				<h2><b>Classic</b> <span class="right tag">$10.00</span></h2>
+                <p>The homey goodness of plain golden pancakes served with whipped butter</p>
+                <hr>
+				
+                <h2><b>Chocolate</b> <span class="right tag">$13.50</span></h2>
+                <p>Pancakes filled with tempting chocolate bits</p>
+                <hr>
+
+                <h2><b>Syrup</b> <span class="right tag">$15.00</span></h2>
+                <p>Syrup-swirled pancakes for just the right touch of sweetness</p>
+                <hr>
+
+                <h2><b>Banana</b> <span class="right tag">$14.00</span></h2>
+                <p>Crushed ripe bananas inside golden pancakes topped with syrup</p>
+                <hr>
+
+                <h2><b>Blueberry</b> <span class="tag">New</span> <span class="right tag">$16.50</span></h2>
+                <p>Sink your teeth into blueberry-filled pancakes with syrup</p>
+                <hr>
+
+                <h2><b>Combined</b> <span class="tag">New</span> <span class="right tag">$20.00</span></h2>
+                <p>Any ingredient combination for a well refined taste</p>
+            </div>
+
+            <div id="Cakes" class="menu bgColorMenu">
+                <h2><b>Chocolate Fondue</b><span class="right tag">$20.00</span></h2>
+                <p>Chocolate cake layered with a rich coconut-pecan filling and frosted with Belgian chocolate ganache.</p>
+                <hr>
+
+                <h2><b>Cookies&amp;Cream</b> <span class="right tag">$18.50</span></h2>
+                <p>Chocolate cake filled and frosted with vanilla Swiss meringue buttercream and chocolate cookie crumble, topped with a bittersweet chocolate glaze.</p>
+                <hr>
+
+                <h2><b>Hazelnut</b> <span class="tag">New</span> <span class="right tag">$16.50</span></h2>
+                <p>Vanilla creme fraîche cake filled and frosted with hazelnut Swiss meringue buttercream and hazelnut praline, topped with a bittersweet chocolate glaze.</p>
+                <hr>
+
+                <h2><b>Red Velvet</b> <span class="right tag">$21.50</span></h2>
+                <p>Our moist red velvet cake filled and frosted with cream cheese frosting.</p>
+				<hr>
+				
+				<h2><b>Black Forest</b> <span class="tag">Deluxe</span> <span class="right tag">$24.00</span></h2>
+                <p>Chocolate cake layered with kirsch brandy-marinated Morello cherries and creme legere, frosted with dark Belgian chocolate ganache.</p>
+             
+            </div>
+
+            <div id="IceCream" class="menu bgColorMenu">
+                <h2><b>4 Scoop</b> <span class="right tag">$12.00</span></h2>
+                <p>Pick any 4 flavors!</p>
+                <hr>
+			
+                <h2><b>Sundae</b> <span class="right tag">$15.00</span></h2>
+                <p>Fashioned with vanilla ice cream, and your choice of toppings, topped off with a mountain of whipped cream.</p>
+                <hr>
+
+                <h2><b>Cone</b> <span class="right tag">$8.50</span></h2>
+                <p>Whatever your choice of flavour, it will be a perfect compliment to our homemade ice cream.</p>
+                <hr>
+
+                <h2><b>Today's Luck</b> <span class="tag">Seasonal</span> <span class="right tag">$13.50</span></h2>
+                <p>Let the ice cream choose you!</p>
+            </div>
+            <br>
+
+        </div>
+    </div>
+
+	<script>
+		window.onload = theHappyHours();
+	</script>
+
+</body>
+
+</html>

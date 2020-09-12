@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flappy Pancake - Program</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Flappy Pancake Bakery">
+    <link rel="stylesheet" href="SiteCSS.css">
+    <script src="SiteJS.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="top">
+        <div id="myNavbar">
+            <a class="paddNav" href="SiteHome.html">&nbsp;&nbsp; HOME</a>
+            <a class="paddNav" href="SiteMenu.html">&nbsp;&nbsp; MENU</a>
+			<a class="paddNav" href="SiteProgram.html">&nbsp;&nbsp; PROGRAM</a>
+            <a class="paddNav" href="SiteAbout.html">&nbsp;&nbsp; ABOUT</a>
+            <a class="paddNav" href="SiteContact.html">&nbsp;&nbsp; CONTACT</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="padding" id="about">
+            <div class="content">
+                <h1 class="center bgColorTitle" style="margin-bottom:64px">Program</h1>
+				<img src="https://appstickers-cdn.appadvice.com/1156146320/818966510/7283c3b61d212c3184a583949b65a623-0.png" class="sticky"></img>
+                <h1><b>Opening Hours</b></h1>
+                <ol id = "theList" type="1">
+                    <li value="1">
+                        Monday 11:00 - 22:00
+                    </li>
+                    <li value="2">
+                        Tuesday 10.00 - 22.00
+                    </li>
+					<li value="3">
+                        Wednesday 10.00 - 22.00
+                    </li>
+                    <li value="4">
+                        Thursday 10:00 - 23:00
+                    </li>
+                    <li value="5">
+                        Friday 10:00 - 22:00
+                    </li>
+                    <li value="6">
+                        Saturday 12:00 - 20:00
+                    </li>
+                    <li value="7">
+                        Sunday Closed
+                    </li>
+                </ol>
+				<br>
+				<form>
+					<input type="radio" name="list" onclick="radioList('1')" id="def"> Arabic numerals <br>
+					<input type="radio" name="list" onclick="radioList('A')"> Upper letters <br>
+					<input type="radio" name="list" onclick="radioList('a')"> Lower letters <br>
+					<input type="radio" name="list" onclick="radioList('I')"> Roman numerals 
+				</form>
+            </div>
+        </div>
+    </section>
+	
+    <section>
+        <div class="padding-64" id="about">
+            <div class="content">
+			<img src="https://appstickers-cdn.appadvice.com/1156146320/818966510/7283c3b61d212c3184a583949b65a623-0.png" class="sticky"></img>
+                <table style="margin-left:42px; padding: 12px; border: 1px solid purple;">  Team
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+						<th>Role</th>
+                    </tr>
+                    <tr>
+                        <td>Papa</td>
+                        <td>Sweet</td>
+						<td>Owner</td>
+                    </tr>
+                    <tr>
+                        <td>James</td>
+                        <td>Smith</td>
+						<td>Baker</td>
+                    </tr>
+					<tr>
+                        <td>Pamella</td>
+                        <td>Blue</td>
+						<td>Waitress</td>
+                    </tr>
+					<tr>
+                        <td>Bob</td>
+                        <td>Berry</td>
+						<td>Associate</td>
+					</tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <img src="http://toursdepartingdaily.com/wp-content/uploads/Boudin-Bakery-Tour-Entrance-Gallery.jpg" style="width:100%;">
+	<br><br>
+	<section>
+	<iframe src="https://en.wikipedia.org/wiki/Bakery" name="myIframe" id="ifrMid"></iframe>
+	<a href="https://en.wikipedia.org/wiki/List_of_bakeries" target="myIframe" style="padding-left:120px; padding-bottom:64px;">Click to see a list of bakeries</a>
+	</section>
+	
+	<script>
+    window.onload = function() 
+	{
+		document.getElementById("def").checked = "true";
+		$("ol").dblclick(function(){
+			reverseList();
+		});
+    }
+	</script>
+</body>
+
+</html>

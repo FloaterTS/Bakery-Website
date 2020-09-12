@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flappy Pancake - About</title>
+    <meta charset="UTF-8">
+	<meta name="description" content="Flappy Pancake Bakery">
+    <link rel="stylesheet" href="SiteCSS.css">
+    <script src="SiteJS.js"></script>
+</head>
+
+<body>
+    <nav class="top">
+        <div id="myNavbar">
+            <a class="paddNav" href="SiteHome.html">&nbsp;&nbsp; HOME</a>
+            <a class="paddNav" href="SiteMenu.html">&nbsp;&nbsp; MENU</a>
+			<a class="paddNav" href="SiteProgram.html">&nbsp;&nbsp; PROGRAM</a>
+            <a class="paddNav" href="SiteAbout.html">&nbsp;&nbsp; ABOUT</a>
+            <a class="paddNav" href="SiteContact.html">&nbsp;&nbsp; CONTACT</a>
+        </div>
+    </nav>
+	
+    <section class="padding-64" id="about">
+        <div class="content">
+            <h1 class="center bgColorTitle" style="margin-bottom:64px">About</h1>
+            <p class="wordbyword">Not so long ago, Flappy Pancake Bakery opened its first kiosk location in Towson, Maryland. From its inception, Flappy Pancake Bakery is known as bakery unique for our square pancakes and cakes. We take pride in using natural ingredients in our pancakes, cakes and desserts. Our treats are as deliciously wholesome as they are beautifully decorated. Choose from our signature pancakes, weekly and holiday specials or custom created desserts.</p>
+            <p><strong>The Founder?</strong> Papa Sweet himself!<img src="https://appstickers-cdn.appadvice.com/1156146320/818966510/7283c3b61d212c3184a583949b65a623-0.png" onclick="myFunctionCr()" style="width:150px; height:120px; border-radius:30%; vertical-align: baseline;" class="right" alt="temp"></p>
+            <p class="wordbyword">We are proud of our principles. Papa Sweet made sure that our bakery <br>will be unlike any other. It is his merit for our welcomed uniqueness.</p>
+			<br>
+			<p>Time left until the founding day of our bakery (11th of July): </p>
+			<p id="countdown"></p>
+			<br>
+			<label>Date of birth:</label>
+			<input type="text" id="birth" name="birth" value="dd#mm#yyyy">
+			<button onclick="findAge()">Get age!</button><br>
+			<p id="age"></p> 
+			<figure>
+            <img src="https://as1.ftcdn.net/jpg/02/09/03/10/500_F_209031051_gAd5Oh0nUwyHhCEPGkIPjfZqNjKpC9bi.jpg" style="width:100%" class="margin-top" alt="temp" onclick="myFunctionDel()"></img>
+			<figure>
+		</div>
+    </section>
+
+    <footer class="center padding-48">
+        <article><p>Sponsored by Cherry On Top Cupcakes</p></article>
+    </footer>
+	
+	
+	<script>
+		window.onload = function(){
+			wordByWord();
+			startCountdown();
+		}
+	</script>
+
+</body>
+
+</html>
